@@ -1,16 +1,61 @@
-@import "~bootstrap/scss/bootstrap.scss";
+body {
+  background-color: #0e7e12;
+  box-sizing: border-box;
+}
 
-/* 
-    body{
-        background: #BDBDBD;
-    }
-    
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.card {
+  background-color: white;
+  margin: auto;
+  height: 445px;
+  width: 320px;
+  border-radius: 20px;
+  position: absolute;
+  border: 0;
+  top: 50%;
+  left: 50%;
+  margin-left: -220px;
+  margin-top: -160px;
+  display: block;
 
-*/
+  .suit-up {
+    height: 150px;
+    font-size: 90px;
+    display: block;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+  .number {
+    height: 145px;
+    font-size: 90px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .suit-bottom {
+    height: 150px;
+    font-size: 90px;
+    transform: rotate(180deg);
+    display: block;
+    padding-top: 0px;
+    padding-left: 20px;
+  }
+}
+
+.spades {
+  content: "\2660";
+}
+
+.clubs {
+  content: "\2663";
+}
+
+.hearts {
+  content: "\2665";
+  color: red;
+}
+
+.diamons {
+  content: "\2666";
+  color: red;
+}
